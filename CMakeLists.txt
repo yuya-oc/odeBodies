@@ -7,4 +7,4 @@ add_library(odeBodies
 odeBodies.cpp
 )
 
-target_link_libraries(odeBodies {ODE_LIBS})
+target_link_libraries(odeBodies ${ODE_LIBS})
