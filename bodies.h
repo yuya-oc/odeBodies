@@ -1,4 +1,7 @@
 
+#ifndef ODEBODIES_H_
+#define ODEBODIES_H_
+
 #include <ode/ode.h>
 
 typedef enum{
@@ -55,3 +58,5 @@ private:
 	dReal length;
 	dReal radius;
 };
+
+#endif
