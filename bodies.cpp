@@ -1,5 +1,5 @@
 
-#include "odeBodies.h"
+#include "bodies.h"
 
 void dBodySphere::setMass(dReal density, dReal radius) {
 	dMass mass;
