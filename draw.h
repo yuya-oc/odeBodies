@@ -10,7 +10,7 @@
 
 #include "bodies.h"
 
-class odeDraw {
+class odeBodies {
 public:
 	static void draw(const dBodyBox& box);
 };

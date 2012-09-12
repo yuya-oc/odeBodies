@@ -12,6 +12,6 @@
 	#define dsDrawBox dsDrawBoxD
 #endif
 
-void odeDraw::draw(const dBodyBox& box) {
+void odeBodies::draw(const dBodyBox& box) {
 	dsDrawBox(box.getPosition(), box.getRotation(), box.getSides());
 }
