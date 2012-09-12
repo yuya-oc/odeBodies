@@ -10,8 +10,18 @@
 
 #ifdef dDOUBLE
 	#define dsDrawBox dsDrawBoxD
+	#define dsDrawCylinder dsDrawCylinderD
+	#define dsDrawSphere dsDrawSphereD
 #endif
 
 void odeBodies::draw(const dBodyBox& box) {
 	dsDrawBox(box.getPosition(), box.getRotation(), box.getSides());
+}
+
+void odeBodies::draw(const dBodyCylinder& cylinder) {
+	dsDrawCylinder(cylinder.getPosition(), cylinder.getRotation(), cylinder.getLength(), cylinder.getRadius());
+}
+
+void odeBodies::draw(const dBodySphere& sphere) {
+	dsDrawSphere(sphere.getPosition(), sphere.getRotation(), sphere.getRadius());
 }

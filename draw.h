@@ -13,6 +13,8 @@
 class odeBodies {
 public:
 	static void draw(const dBodyBox& box);
+	static void draw(const dBodyCylinder& cylinder);
+	static void draw(const dBodySphere& sphere);
 };
 
 #endif /* ODEDRAW_H_ */
